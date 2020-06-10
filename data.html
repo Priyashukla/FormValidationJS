@@ -1,0 +1,55 @@
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Javascript Course</title>
+</head>
+<body>
+	<br/>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-4 offset-md-4">
+				<form id="exampleForm">
+                <div class="form-group">
+                	<label>Email address</label>
+                	<input onkeyup="validateemail()" type="email" class="form-control" id="inputemail" placeholder="Enter email" required>
+                	<small id="emailvalidationmsg" class="form-text text-danger"></small>
+                </div>
+
+                <div class="form-group">
+                	<label>Name</label>
+                	<input onkeyup="validatename()" type="text" class="form-control" id="inputname" placeholder="Name" required>
+                	<small id="namevalidationmsg" class="form-text text-danger"></small>
+                </div>
+
+                <div class="form-group">
+                	<label>Age</label>
+                	<input onkeyup="validateage()" type="text" class="form-control" id="inputage" placeholder="Age" required>
+                	<small id="agevalidationmsg" class="form-text text-danger"></small>
+                </div>
+
+                <div class="form-group">
+                	<label>Phone</label>
+                	<input onkeyup="validatephone()" type="number" class="form-control" id="inputphone" placeholder="Phone" required>
+                </div>
+                
+                <div class="form-group">
+                	<label>Photo</label>
+                	<input onchange="validatephoto()" type="file" id="photo"required>
+                	<small id="photovalidationmsg" class="form-text text-danger"></small>
+                </div>
+                <br/>
+                <button type="button" onclick="formdatasend()" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+    <Script src="app.js"></Script>
+</body>
+</html>
